@@ -12,3 +12,11 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+.page-width {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
