@@ -1,11 +1,16 @@
-* {
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+// Base
 
-:root {
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+// Components
+@use "./partials/components/header";
+@use "./partials/components/general";
+@use "./partials/components/footer";
+
+// Utilities
+
+@use "./partials/utilities/variables": root {
   --gray-bg: #f1f1f1;
 }
 
