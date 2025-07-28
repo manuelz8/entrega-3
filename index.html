@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="./pages/lista-destinos.html">Destinos</a></li>
+          <li><a href="./pages/destino.html">Destino del mes</a></li>
+          <li><a href="./pages/resenas.html">Reseñas</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Seccion hero, la imagen sera de fondo y el texto estara en el medio-->
+      <section class="hero">
+        <img src="./assets/hero.jpg" alt="Imagen hero" />
+        <div class="overlay"></div>
+        <h1>Ensignia Viajes</h1>
+        <a href="./pages/lista-destinos.html" class="button">Ver destinos</a>
+      </section>
+      <!-- Seccion de destinos mas visitados-->
+      <section class="destinos">
+        <h2>Destinos mas visitados</h2>
+        <div class="destinos-container">
+          <!-- Card 1-->
+          <div class="destinos-container__item">
+            <img src="./assets/calafate.jpg" alt="Foto destacada" />
+            <div class="destinos-container__item-description">
+              <h3>El Calafate, Santa Cruz</h3>
+              <p>
+                Ubicado en la Patagonia, El Calafate es la puerta de acceso al
+                majestuoso Glaciar Perito Moreno. Ofrece paisajes de hielo,
+                lagos turquesas y una experiencia única con la naturaleza
+                austral. Ideal para los amantes de la aventura y el trekking.
+              </p>
+              <a href="./pages/destino.html" class="button">Ver mas</a>
+            </div>
+          </div>
+
+          <!-- Card 2-->
+          <div class="destinos-container__item">
+            <img src="./assets/bariloche.jpg" alt="Foto destacada" />
+            <div class="destinos-container__item-description">
+              <h3>San Carlos de Bariloche, Río Negro</h3>
+              <p>
+                Destino de ensueño en la región de los lagos andinos, Bariloche
+                ofrece cerros nevados, lagos cristalinos y una ciudad llena de
+                historia y chocolate. En invierno, es uno de los centros de
+                esquí más famosos de Sudamérica.
+              </p>
+              <a href="./pages/destino.html" class="button">Ver mas</a>
+            </div>
+          </div>
+
+          <!-- Card 3-->
+          <div class="destinos-container__item">
+            <img src="./assets/jujuy.webp" alt="Foto destacada" />
+            <div class="destinos-container__item-description">
+              <h3>Purmamarca, Jujuy</h3>
+              <p>
+                Purmamarca es un pequeño pueblo norteño famoso por el Cerro de
+                los Siete Colores. Sus calles de adobe, su cultura ancestral y
+                sus paisajes andinos conquistan a todo viajero que busca
+                autenticidad y naturaleza.
+              </p>
+              <a href="./pages/destino.html" class="button">Ver mas</a>
+            </div>
+          </div>
+
+          <!-- Card 4-->
+          <div class="destinos-container__item">
+            <img src="./assets/misiones.avif" alt="Foto destacada" />
+            <div class="destinos-container__item-description">
+              <h3>Cataratas del Iguazú, Misiones</h3>
+              <p>
+                Ubicadas en el Parque Nacional Iguazú, estas imponentes
+                cataratas son una de las Siete Maravillas Naturales del Mundo.
+                Con más de 270 saltos de agua rodeados por una exuberante selva
+                subtropical, ofrecen una experiencia única de conexión con la
+                naturaleza. Desde la Garganta del Diablo hasta los paseos
+                náuticos, cada rincón sorprende con su majestuosidad y
+                biodiversidad. Ideal para amantes de la aventura, la fotografía
+                y la vida silvestre.
+              </p>
+              <a href="./pages/destino.html" class="button">Ver mas</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/logo.png" alt="Logo" class="logo" />
+      <!-- Seccion redes sociales-->
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/"
+          ><img src="./assets/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="./assets/facebook.png" alt="Facebook"
+        /></a>
+      </div>
+      <p class="small">Copyright © 2025 Ensignia agencia de viajes</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gray-bg: #f1f1f1;
+}
+
+header {
+  background: var(--gray-bg);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  z-index: 3;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 0;
+}
+
+.hero .button {
+  z-index: 2;
+  font-size: 14px;
+  background-color: rgba(128, 128, 128, 0.17);
+  color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+.button {
+  background-color: lightblue;
+  color: #f1f1f1;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.destinos h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.destinos-container {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.destinos-container__item {
+  background: var(--gray-bg);
+}
+
+.destinos-container__item img {
+  width: 100%;
+}
+
+.destinos-container__item-description {
+  padding: 20px;
+}
+
+.destinos-container__item-description .button {
+  margin: 20px auto 0;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.destinos-container__item h3 {
+  font-size: 20px;
+  color: #004aad;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.destino-info p {
+  font-size: 18px;
+}
+
+.lista-destinos {
+  padding: 0 20px;
+}
+
+.lista-destinos-h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.lista-destinos__item {
+  background-color: #f1f1f1;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+}
+
+.lista-destinos__item img {
+  width: 50%;
+}
+
+.lista-destinos__item p {
+  margin: 20px 0;
+}
+
+.lista-destinos__item-right,
+.lista-destinos__item-left {
+  width: 50%;
+  padding: 40px;
+}
+
+.lista-destinos__item-text {
+  text-align: center;
+}
+
+.lista-destinos__item h2 {
+  font-size: 24px;
+}
+
+.lista-destinos__item h3 {
+  font-size: 18px;
+}
+
+.destino-heading {
+  margin-top: 40px;
+}
+
+.destino-info {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.destino-info .button {
+  margin: 40px auto 0;
+}
+
+.carousel img {
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto 40px;
+  display: flex;
+}
+
+footer {
+  padding: 20px 40px;
+  background: var(--gray-bg);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-resenas {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.lista-resenas__item {
+  background-color: var(--gray-bg);
+}
+
+.lista-resenas__item img {
+  width: 100%;
+}
+
+.lista-resenas__item .review {
+  width: 100px;
+}
+
+.lista-destinos__item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.lista-destinos__item-text .button {
+  margin-top: 20px;
+}
+
+footer .logo {
+  width: 200px;
+}
+
+footer .footer-redes {
+  margin-bottom: 20px;
+}
+
+footer .footer-redes img {
+  width: 30px;
+  height: 30px;
+}
+
+form {
+  max-width: 1200px;
+  padding: 20px;
+  background-color: var(--gray-bg);
+  margin: 40px auto;
+}
+
+form input {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+form textarea {
+  width: 100%;
+  margin-top: 10px;
+  resize: none;
+}
+
+form button {
+  background-color: lightblue;
+  color: black;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+  .destinos-container,
+  .lista-resenas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .lista-destinos__item {
+    flex-direction: column;
+  }
+  .lista-destinos__item-right,
+  .lista-destinos__item-left {
+    width: 100%;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
