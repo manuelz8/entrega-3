@@ -1,0 +1,54 @@
+@use "../utilities/variables";
+
+.destinos {
+  &-container {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &__item {
+      background: variables.$gray-bg;
+      overflow: hidden;
+      border-radius: variables.$card-radius;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px #0000009a;
+        transition: 0.3s ease-in-out;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+
+      &-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        h3 {
+          font-size: 20px;
+          color: #004aad;
+        }
+
+        p {
+          display: flex;
+          flex: 1;
+        }
+
+        .button {
+          margin-top: 10px;
+          font-size: 14px;
+          background-color: #4caf50;
+          color: #f1f1f1;
+        }
+      }
+    }
+  }
+}

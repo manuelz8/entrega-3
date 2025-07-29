@@ -1,0 +1,17 @@
+@use "../utilities/variables";
+.accordion {
+  margin-bottom: 40px;
+}
+
+.accordion-button {
+  background-color: variables.$gray-bg;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: variables.$gray-bg;
+  box-shadow: none;
+}

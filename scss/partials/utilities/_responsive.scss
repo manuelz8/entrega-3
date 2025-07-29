@@ -1,0 +1,40 @@
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+  .destinos-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .lista-resenas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .lista-destinos__item {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .lista-destinos__item-right,
+  .lista-destinos__item-left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ig-posts-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}

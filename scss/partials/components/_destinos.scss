@@ -1,0 +1,48 @@
+@use "../utilities/variables";
+
+.lista-destinos {
+  padding: 0 20px;
+  margin-top: 30px;
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    background-color: #f1f1f1;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    display: flex;
+    border-radius: variables.$card-radius;
+    overflow: hidden;
+
+    img {
+      width: 50%;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    &-right {
+      width: 50%;
+      padding: 40px;
+    }
+    &-left {
+      width: 50%;
+      padding: 40px;
+    }
+
+    &-text {
+      text-align: center;
+    }
+  }
+}

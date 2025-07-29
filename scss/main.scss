@@ -8,11 +8,16 @@
 @use "./partials/components/general";
 @use "./partials/components/footer";
 @use "./partials/components/hero";
+@use "./partials/components/mas-visitados";
+@use "./partials/components/accordion";
+@use "./partials/components/ig-posts";
+@use "./partials/components/destinos";
 
 // Utilities
 
 @use "./partials/utilities/variables";
 @use "./partials/utilities/mixins";
+@use "./partials/utilities/responsive";
 
 header {
   background: variables.$gray-bg;
@@ -37,23 +42,6 @@ header ul li a {
   text-decoration: none;
   margin-left: 20px;
 }
-h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 40px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 28px;
-}
-
-a {
-  text-decoration: none;
-}
 
 .logo {
   width: 150px;
@@ -67,40 +55,12 @@ a {
   display: flex;
   width: fit-content;
   border-radius: variables.$button-radius;
-}
+  transition: ease-in-out 0.3s;
 
-.destinos h2 {
-  text-align: center;
-}
-
-.destinos-container {
-  padding: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.destinos-container__item {
-  background: variables.$gray-bg;
-}
-
-.destinos-container__item img {
-  width: 100%;
-}
-
-.destinos-container__item-description {
-  padding: 20px;
-}
-
-.destinos-container__item-description .button {
-  margin: 20px auto 0;
-  display: flex;
-  width: fit-content;
-}
-
-.destinos-container__item h3 {
-  font-size: 20px;
-  color: #004aad;
+  &:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.05);
+  }
 }
 
 .small {
@@ -108,48 +68,6 @@ a {
 }
 
 .destino-info p {
-  font-size: 18px;
-}
-
-.lista-destinos {
-  padding: 0 20px;
-}
-
-.lista-destinos-h1 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.lista-destinos__item {
-  background-color: #f1f1f1;
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  display: flex;
-}
-
-.lista-destinos__item img {
-  width: 50%;
-}
-
-.lista-destinos__item p {
-  margin: 20px 0;
-}
-
-.lista-destinos__item-right,
-.lista-destinos__item-left {
-  width: 50%;
-  padding: 40px;
-}
-
-.lista-destinos__item-text {
-  text-align: center;
-}
-
-.lista-destinos__item h2 {
-  font-size: 24px;
-}
-
-.lista-destinos__item h3 {
   font-size: 18px;
 }
 
@@ -254,29 +172,4 @@ form button {
   padding: 10px;
   display: flex;
   width: fit-content;
-}
-
-/* Responsive */
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-    justify-content: center;
-  }
-  .destinos-container,
-  .lista-resenas {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .lista-destinos__item {
-    flex-direction: column;
-  }
-
-  .lista-destinos__item-right,
-  .lista-destinos__item-left {
-    width: 100%;
-    padding: 20px;
-  }
 }
