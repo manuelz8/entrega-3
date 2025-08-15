@@ -1,4 +1,41 @@
+@use "variables";
+
 /* Responsive */
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 74px;
+    z-index: 1000;
+    width: 100%;
+    left: 0px;
+    background: variables.$green;
+  }
+
+  header {
+    .navbar-toggler {
+      border: none;
+      .navbar-toggler-icon {
+        background-image: url("../../../assets/menu-toggle.png");
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    nav {
+      ul {
+        gap: 10px;
+        padding-bottom: 20px;
+
+        a {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -10,6 +47,7 @@
     padding-bottom: 20px;
     justify-content: center;
   }
+
   .destinos-container {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -25,6 +63,10 @@
     img {
       width: 100%;
     }
+  }
+
+  .lista-destinos__item.row-inverse {
+    flex-direction: column-reverse;
   }
 
   .lista-destinos__item-right,

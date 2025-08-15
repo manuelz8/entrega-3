@@ -1,0 +1,38 @@
+@use "../utilities/variables";
+
+header {
+  background: variables.$green;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+
+  .navbar-collapse {
+    flex: initial;
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      li {
+        .nav-link {
+          color: white;
+          text-decoration: none;
+          transition: ease 0.3s;
+
+          &:hover {
+            color: white;
+            opacity: 0.8;
+            transition: ease 0.3s;
+          }
+
+          &.current {
+            font-weight: bold;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

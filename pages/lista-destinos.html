@@ -4,20 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de destinos</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-new.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <img src="../assets/logo.png" alt="Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="#">Destinos</a></li>
-          <li><a href="./destino.html">Destino del mes</a></li>
-          <li><a href="./resenas.html">Reseñas</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+    <header class="navbar navbar-expand-lg">
+      <div class="container-fluid page-width">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/new-logo.svg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="lista-destinos.html"
+                >Destinos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destino.html">Destino del mes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resenas.html">Reseñas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html" disabled>Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Seccion de lista de destinos-->
@@ -27,7 +71,10 @@
         </h1>
         <!-- Card de destino con imagen a la izquierda y texto a la derecha-->
         <article class="lista-destinos__item">
-          <img src="../assets/mendoza.jpg" alt="Destino" />
+          <img
+            src="../assets/mendoza.jpg"
+            alt="Foto de la cordillera de los andes con un campo abajo"
+          />
           <div class="lista-destinos__item-right">
             <h2>Valle de Uco, Mendoza</h2>
             <p>
@@ -40,7 +87,7 @@
           </div>
         </article>
         <!-- Card de destino con imagen a la derecha y texto a la izquierda-->
-        <article class="lista-destinos__item">
+        <article class="lista-destinos__item row-inverse">
           <div class="lista-destinos__item-left">
             <h2>Sierras de Córdoba, Córdoba</h2>
             <p>
@@ -52,11 +99,14 @@
             </p>
             <a href="./destino.html" class="button">Ver mas</a>
           </div>
-          <img src="../assets/cordoba.webp" alt="Destino" />
+          <img src="../assets/cordoba.webp" alt="Foto de montañas" />
         </article>
         <!-- Card de destino con imagen a la izquierda y texto a la derecha-->
         <article class="lista-destinos__item">
-          <img src="../assets/gualeguaychu.jpg" alt="Destino" />
+          <img
+            src="../assets/gualeguaychu.jpg"
+            alt="Foto de un rio con un puente"
+          />
           <div class="lista-destinos__item-right">
             <h2>Gualeguaychú, Entre Ríos</h2>
             <p>
@@ -71,7 +121,7 @@
       </section>
     </main>
     <footer>
-      <img src="../assets/logo.png" alt="Logo" class="logo" />
+      <img src="../assets/logo-green.svg" alt="Logo" class="logo" />
       <!-- Seccion redes sociales-->
       <div class="footer-redes">
         <a href="https://www.instagram.com/"
